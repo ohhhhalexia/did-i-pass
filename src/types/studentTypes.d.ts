@@ -1,13 +1,37 @@
-CourseGrades
+type CourseGrades = {
+    assignmentWeights: Array<CourseGrade>;
+    finalExamWeight: number;
+}
 
-CourseGrade
+type CourseGrade = {
+    name: string;
+    weight: number;
+    grade: number;
+};
 
-Student
+type Student = {
+    name: string;
+    weights: Array<CourseGrades>;
+    currentAverage: number;
+}
 
-NewStudentRequest
+type NewStudentRequest = {
+    name: string;
+    weight: Array<CourseGrades>;
+}
 
-AssignmentGrade
+type AssignmentGrade = {
+    grade: number;
+};
 
-FinalGrade
+type FinalGrade = {
+    overallScore: number;
+    letterGrade: string;
+};
 
-FinalExamScores
+type FinalExamScores = {
+    neededForA: number;
+    neededForB: number;
+    neededForC: number;
+    neededForD: number;
+};
