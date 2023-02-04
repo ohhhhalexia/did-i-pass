@@ -35,3 +35,7 @@ type FinalExamScores = {
     neededForC: number;
     neededForD: number;
 };
+
+
+type StudentManager = Record<string, Student>;
+}

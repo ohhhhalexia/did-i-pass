@@ -11,4 +11,3 @@ function createNewStudent(req: Request, res: Response): void {
     // Send status 201 (This means 201 Created)
   }
 
-  
