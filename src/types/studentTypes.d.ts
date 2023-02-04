@@ -11,13 +11,13 @@ type CourseGrade = {
 
 type Student = {
     name: string;
-    weights: Array<CourseGrades>;
+    weights: CourseGrades;
     currentAverage: number;
 }
 
 type NewStudentRequest = {
     name: string;
-    weight: Array<CourseGrades>;
+    weight: CourseGrades;
 }
 
 type AssignmentGrade = {
