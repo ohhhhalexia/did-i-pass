@@ -1,3 +1,6 @@
+
+
+
 function calculateAverage(weights: CourseGrades): number {
   
 }
