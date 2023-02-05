@@ -1,5 +1,4 @@
-
-
+const students: StudentManager = {};
 
 function calculateAverage(weights: CourseGrades): number {
   
