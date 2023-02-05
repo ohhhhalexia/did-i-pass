@@ -38,4 +38,3 @@ type FinalExamScores = {
 
 
 type StudentManager = Record<string, Student>;
-
