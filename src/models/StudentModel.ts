@@ -1,5 +1,11 @@
 const students: StudentManager = {};
 
+// function getStudentData (): StudentManager {
+//     return students;
+// }
+
+// export {getStudentData};
+
 function calculateAverage(weights: CourseGrades): number {
   
 }
@@ -22,6 +28,13 @@ function addStudent(newStudentData: NewStudentRequest): boolean {
     // Finally, return true since the student was added
   }
 
+
+function getStudent(studentName: string): Student | undefined {
+    // If the student's name is not in `students`
+      // then return undefined
+  
+    // Return the student's information (their name is the key for `students`)
+}
 
   export { students, addStudent, getStudent };
   
