@@ -1,13 +1,19 @@
-function createNewStudent(req: Request, res: Response): void {
-  
-    const studentData = // Assign `req.body` as a `NewStudentRequest`
-  
-    const didAddStudent = // Call the `addStudent` function using the student's data
-  
-    // If the student's data was not added successfully
-      // Responds with status 409 (This means 409 Conflict)
-      // return from the function
-  
-    // Send status 201 (This means 201 Created)
-  }
+// Import express
+import express, { Express } from 'express';
 
+
+// Import functions from StudentController
+
+// Create your app object
+const app: Express = express();
+const PORT = 8091;
+
+
+// Activate json parsing for the request body
+
+// Register your route handlers for the specified endpoints
+
+// Start listening on the chosen port
+app.listen(PORT, () => {
+    console.log('Server listening on http://localhost:${PORT}');
+});
