@@ -1,17 +1,22 @@
 import { Request, Response } from 'express';
-import { students, addStudent, getStudent } from '../models/StudentsModel';
+import { students, addStudent, getStudent } from '../models/StudentModel';
 
 function getAllStudents(req: Request, res: Response): void {
   res.json(students);
 }
 
-
+export default (getAllStudents);
 
 function getStudent(studentName: string): Student | undefined {
     // If the student's name is not in `students`
       // then return undefined
-  
+    if (studentName ____) {
+        return undefined;
+    }
     // Return the student's information (their name is the key for `students`)
+    else {
+        return studentName;
+    }
   }
 
 
