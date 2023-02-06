@@ -5,20 +5,21 @@ function getAllStudents(req: Request, res: Response): void {
   res.json(students);
 }
 
-export default (getAllStudents);
+export (getAllStudents);
 
 function getStudent(studentName: string): Student | undefined {
     // If the student's name is not in `students`
       // then return undefined
-    if (studentName ____) {
+    if (! (studentName in students)) {
         return undefined;
     }
     // Return the student's information (their name is the key for `students`)
-    else {
-        return studentName;
+    else () => {
+    return Student;
     }
   }
 
+export (getStudent)
 
 
   function createNewStudent(req: Request, res: Response): void {
@@ -33,4 +34,3 @@ function getStudent(studentName: string): Student | undefined {
   
     // Send status 201 (This means 201 Created)
   }
-
