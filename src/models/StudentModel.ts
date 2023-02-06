@@ -31,11 +31,13 @@ function addStudent(newStudentData: NewStudentRequest): boolean {
 
 function getStudent(studentName: string): Student | undefined {
     // If the student's name is not in `students`
+    if (!(studentName in students)) {
       // then return undefined
+        return undefined;
+      }
   
     // Return the student's information (their name is the key for `students`)
-}
+    return students[studentName];
+    }
 
   export { students, addStudent, getStudent };
-  
-  
