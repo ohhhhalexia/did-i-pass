@@ -15,7 +15,7 @@ function getStudent(studentName: string): Student | undefined {
     }
     // Return the student's information (their name is the key for `students`)
     else () => {
-    return Student;
+    return students[studentName];
     }
   }
 
