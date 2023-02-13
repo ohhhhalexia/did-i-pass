@@ -1,40 +1,39 @@
 type CourseGrades = {
-    assignmentWeights: Array<CourseGrade>;
-    finalExamWeight: number;
-}
+  assignmentWeights: Array<CourseGrade>;
+  finalExamWeight: number;
+};
 
 type CourseGrade = {
-    name: string;
-    weight: number;
-    grade: number;
+  name: string;
+  weight: number;
+  grade: number;
 };
 
 type Student = {
-    name: string;
-    weights: CourseGrades;
-    currentAverage: number;
-}
+  name: string;
+  weights: CourseGrades;
+  currentAverage: number;
+};
 
 type NewStudentRequest = {
-    name: string;
-    weight: CourseGrades;
-}
+  name: string;
+  weights: CourseGrades;
+};
 
 type AssignmentGrade = {
-    grade: number;
+  grade: number;
 };
 
 type FinalGrade = {
-    overallScore: number;
-    letterGrade: string;
+  overallScore: number;
+  letterGrade: string;
 };
 
 type FinalExamScores = {
-    neededForA: number;
-    neededForB: number;
-    neededForC: number;
-    neededForD: number;
+  neededForA: number;
+  neededForB: number;
+  neededForC: number;
+  neededForD: number;
 };
-
 
 type StudentManager = Record<string, Student>;
